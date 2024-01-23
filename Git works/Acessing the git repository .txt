@@ -1,0 +1,10 @@
+"Acessing the git repository "
+
+git config --global http.sslVerify false
+
+git config --global http.sslBackend schannel
+
+git -c http.sslVerify=false clone https://github.com/Anamika-s/training.git
+
+https://github.com/Anamika-s/training.git
+

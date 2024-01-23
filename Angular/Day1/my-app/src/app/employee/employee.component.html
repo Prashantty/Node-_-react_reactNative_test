@@ -1,0 +1,37 @@
+<h4> Employee !</h4>
+
+<div *ngIf="employees.length>0;then EmployeeList;else NoEmployee"></div>
+<ng-template #EmployeeList>
+<table class="table" >
+    <thead>
+      <tr>
+        <th scope="col">ID</th>
+        <th scope="col">Name</th>
+        <th scope="col">Dept</th>
+        <th scope="col">Salary</th>
+        <!-- <th scope="col">Gender</th> -->
+        <th scope="col">DOJ</th>
+        
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let employee of employees" >
+        
+        <td>{{employee.Id}}</td>
+        <td>{{employee.name | titlecase | gender:employee.gender}}</td>
+        <td>{{employee.dep}}</td>
+        <td>{{employee.salary |currency:"INR"}}</td>
+        <!-- <td>{{employee.gender}}</td> -->
+        <td>{{employee.doj}}</td>
+      </tr>
+    </tbody>
+  </table>
+</ng-template>
+
+<ng-template #NoEmployee>
+
+    <p> There are no Recoreds !!!</p>
+</ng-template>
+
+<app-search (search)="SearchText($event)"> </app-search>
+

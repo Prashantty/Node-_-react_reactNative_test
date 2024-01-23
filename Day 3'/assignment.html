@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Evets</title>
+</head>
+
+
+<body>
+    <script>
+
+        var addkeys = [];
+        function myFunction(event) {
+            
+            
+            console.log("Running.....");
+            console.log(event.keyCode);
+            console.log(event);
+    
+             if(event.keyCode === 13)
+             {
+                var p = document.getElementById("txt").value;
+                 addkeys.push(p);
+             }
+          console.log("Running....");
+           
+        }
+    
+        function Display(){
+    
+            var list ="";
+                    for(var i=0;i<addkeys.length;i++)
+                    {
+                        console.log(addkeys[i]);
+                        list = `<li>${addkeys[i]}</li>`;
+                    }
+                    console.log(list);
+                    document.getElementById("demo").innerHTML = list;
+        }
+    
+    
+        </script>
+<p>Press a key in the input field:</p>
+
+<input type="text" onkeydown="myFunction(event)"  id="txt">
+    <button type="button" 
+        id="display" 
+        class="btn btn-primary" 
+        onclick="Display()">Display
+    </button>
+
+    <ol id="demo"></ol>
+
+
+    
+</body>
+</html>

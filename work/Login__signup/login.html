@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login page </title>
+</head>
+<style>
+
+body{
+    margin: 0;
+    padding: 0;
+    background: rgb(186,182,184);
+    background: radial-gradient(circle, rgba(186,182,184,1) 0%, rgba(1,11,24,1) 100%);
+    height: 100vh;
+    overflow: hidden;
+
+}
+
+.c1{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 400px;
+    background: rgb(241,241,241);
+    background: radial-gradient(circle, rgba(241,241,241,1) 0%, rgba(175,181,189,1) 100%);
+    border-radius: 10px;
+
+    }
+.c1 h1{
+
+    text-align: center;
+    padding: 0 0 20px 0;
+    border-bottom: 1px solid silver;
+}
+
+.c1 form{
+
+    padding: 0 40px;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+}
+
+form .crd{
+
+    position: relative;
+    border-bottom: 2px solid red;
+    margin: 30px 0;
+}
+
+.crd input{
+    width: 100%;
+    padding: 0 5px;
+    height: 40px;
+    font-size: 16px;
+    border: none;
+    background: none;
+    outline: none;
+    color: brown;
+}
+
+.crd label{
+
+    position: relative;
+    top: 50%;
+    font-size: 20px;
+}
+
+.pass {
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+.pass a{
+    text-decoration: none;
+    color: darkslateblue;
+
+}
+
+.keep{
+
+    text-align: center;
+}
+
+input[type="submit"]{
+
+    margin-top: 20px;
+    width: 100%;
+    height: 30px;
+    border: 1px solid;
+    border-radius: 25px;
+    color: white;
+    background:  #2691d9;
+    font-size: 18px;
+    font-weight: 700;
+    cursor: pointer;
+    outline: none;
+
+
+}
+
+
+
+</style>
+<body>
+<div>
+
+    <div class="c1">
+        <h1> Login Page </h1>
+        <form>
+            <div class="crd">
+                <label > Username </label> 
+                <input type="text" required pattern="[1-9]{3}[A-Za-z]{7}[?/*]+">  
+            </div>
+
+            <div class="crd">
+                <label>Password</label>
+                <input type="password" required > <br>
+                
+            </div>
+
+            <div class="pass">Not a membar ?<a href="/register.html"> SignUp</a></div>
+
+            <input type="checkbox" >
+            <label > Keep me loged in </label><br>
+            <input type="submit" value="Login">
+            </div>
+
+        </form>
+
+</div>
+    
+    
+</body>
+</html>

@@ -1,0 +1,80 @@
+body{
+    margin: 0;
+}
+
+.container{
+
+    height: 12vh;
+    background-color: cornflowerblue;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    border-bottom: 2px solid red;
+}
+
+.image{
+
+    width: 10vh;
+    height: 8vh;
+    padding: 1em;
+    
+}
+
+.nav ul{
+    list-style: none;
+}
+
+.nav ul li{
+    display: inline;
+    padding: 1em;
+}
+
+.nav ul li a{
+    text-decoration: none;
+    color: white;
+
+}
+.button{
+    background-color: coral;
+    border:2px solid wheat;
+    color: white;
+    padding : 10px;
+    width: 10vw;
+    border-radius: 10%;
+    margin: 10px;
+
+}
+
+.Hero
+{
+    background: url("https://images.pexels.com/photos/16283185/pexels-photo-16283185.jpeg?auto=compress&cs=tinysrgb&w=400&lazy=load") no-repeat;
+    height: 80vh;
+  background-size: cover;
+
+    text-align: center;
+}
+.hero-unit
+{
+    height: 80vh;
+    background-color:black;
+    opacity: .4;
+}
+
+.hero-unit h1{
+    font-size:5em;
+    margin: 0;
+    color: white;
+    padding-top: 25vh;
+}
+
+
+.hero-unit a{
+    border-radius: 10px;
+    color: rgb(243, 241, 241);
+    background-color:rgb(146, 8, 8);
+text-decoration: none;
+padding: 1em;
+display: block;
+width: 10vw;
+margin: 1em auto;
+}

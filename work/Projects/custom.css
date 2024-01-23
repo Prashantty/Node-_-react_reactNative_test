@@ -1,0 +1,77 @@
+body{
+  margin: 3%;
+  border:  10px ;
+}
+
+.navbar {
+  border-radius: 10px;
+background: #0C011C;
+background: linear-gradient(90deg, #0C011C, #040C32);
+    margin: 0%;
+  }
+
+
+
+#id1{
+  border-radius: 10px;
+  color: aliceblue;
+  font-size: 25px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+#ul1 a{
+
+  border-radius: 10px;
+  color: aliceblue;
+}
+
+#ul1 a:hover{
+
+  color: rgb(103, 103, 60);
+}
+
+
+#ul2 {
+  border-radius: 10px;
+}
+
+#ul2 a:hover{
+
+  color: rgb(28, 90, 90);
+}
+
+#sign{
+
+  border-radius: 10px;
+  background-color: #d9e4f5;
+background-image: linear-gradient(315deg, #d9e4f5 0%, #f5e3e6 74%);
+}
+
+
+header{
+  background-color: #d9e4f5;
+  background-image: linear-gradient(315deg, #d9e4f5 0%, #f5e3e6 74%);
+  height: 80vh;
+  width: 100%;
+  border-radius: 22px;
+
+}
+
+#content{
+  padding: 20px;
+  background-color: #b5b5b5;
+  
+}
+
+.div2{
+
+  padding: 50px;
+  margin-top: 20px;
+  background-color: #8f9197;
+}
+
+#Employe_Image{
+
+  height: 100%;
+  width: 200%;
+}

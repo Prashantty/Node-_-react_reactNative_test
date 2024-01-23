@@ -1,0 +1,10 @@
+div {  
+  width: 300px;  
+  height: auto;  
+  text-align: center;  
+  padding: 15px;  
+
+  }  
+  img {  
+    object-fit: cover;  
+    }  

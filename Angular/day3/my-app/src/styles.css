@@ -1,0 +1,12 @@
+/* You can add global styles to this file, and also import other style files */
+
+body{
+    /*
+* Created with https://www.css-gradient.com
+* Gradient link: https://www.css-gradient.com/?c1=dcf9dc&c2=9fa7df&gt=l&gd=dbr
+*/
+background: #DCF9DC;
+background: linear-gradient(315deg, #DCF9DC, #9FA7DF);
+    margin:  15%;
+    padding : 30px;
+}

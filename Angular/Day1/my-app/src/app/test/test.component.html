@@ -1,0 +1,52 @@
+<!-- <h2> Under the Test Component</h2>
+
+<div *ngIf = "course.length>0">
+    <h4>List of Courses</h4>
+    <p>length of Course :: {{course.length}}</p>
+</div>
+
+<div *ngIf ="course.length == 0">
+    <p> There are no courses</p>
+</div>
+
+<div *ngIf = "course.length>0;then CourseList;else NoCourse"></div>
+    <ng-template #CourseList>
+        <table>
+            <ul>
+                <li *ngFor = "let courses of course"> 
+                    {{courses}}
+                </li>
+
+            </ul>
+        </table>
+    </ng-template>
+
+    <ng-template #NoCourse>
+       <p> There are no Course</p>
+    </ng-template> -->
+
+
+    <div *ngIf="courses.length>0;then CourseList;else NoCourses">
+    </div>
+     <ng-template #CourseList>
+     <table>
+        <tr> 
+        <th> ID </th>
+        <th> Name </th>
+        </tr>
+        <tr *ngFor="let course of courses">
+            <td> {{course.id}} </td>
+            <td> {{course.name}}</td>
+            <button (click)="Delete(course.id)" class="btn btn-primary">Remove Courses</button>
+        </tr>
+     </table>
+      </ng-template>
+      <ng-template #NoCourses>
+        <h1> There are no courses </h1>
+      </ng-template>
+    
+    <button (click)="AddCourse()" class="btn btn-denger"> Add Course </button>
+    
+
+
+

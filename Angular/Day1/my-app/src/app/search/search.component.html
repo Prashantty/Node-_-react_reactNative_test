@@ -1,0 +1,9 @@
+<!-- <h4>Srarch!!</h4> -->
+<h5 style="background-color: aqua; font-size:large;">Search Employee</h5> 
+Enter the Department :: 
+<!-- <input type="text" [value]="data"/>
+{{data}} -->
+
+<input type="text" (keyup.enter)="search.emit(name.value) " #name/>
+
+<!-- <button (onClick)="onClick.emit('Coming from child')"> Search </button>  -->

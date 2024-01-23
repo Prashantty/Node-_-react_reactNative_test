@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register Page</title>
+</head>
+
+<style>
+
+  body{
+    background: rgb(186,182,184);
+    background: radial-gradient(circle, rgba(186,182,184,1) 0%, rgba(1,11,24,1) 100%);
+
+  }
+
+
+
+.nav {
+  margin: 20px;
+  text-indent: 10px;
+  text-align: center;
+  background-color: #be2e2e;
+  overflow: hidden;
+}
+
+.nav a {
+  margin-left: 10px;
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  display: flex;
+  padding: 14px ;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+
+.nav a:hover {
+
+  background-color: #e71b1b;
+  color: black;
+}
+
+.c1{
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 600px;
+  background: rgb(241,241,241);
+  background: radial-gradient(circle, rgba(241,241,241,1) 0%, rgba(175,181,189,1) 100%);
+  border-radius: 10px;
+
+  }
+
+  .c1 h1{
+
+    text-align: center;
+    padding: 0 0 20px 0;
+    border-bottom: 1px solid silver;
+}
+
+.c1 f1{
+
+  padding: 0 40px;
+  box-sizing: border-box;
+  margin-bottom: 10px;
+}
+
+
+
+.container{
+    margin-top: 30px;
+    margin-right: 10px;
+    padding: 100px;
+    align-content: center;
+}
+
+.container input{
+  width: 100%;
+  margin: 5px;
+  padding: 0 5px;
+  height: 40px;
+  font-size: 16px;
+  border: none;
+  outline: none;
+  color: rgb(22, 9, 9);
+  border-radius: 10px;
+
+}
+
+.container label{
+  position: relative;
+    top: 50%;
+    font-size: 20px;
+}
+
+.container #comments{
+  height: 60px;
+  width: 400px;
+  border-radius: 7px;
+}
+
+
+input[type="submit"]{
+
+  margin-top: 20px;
+  width: 100%;
+  height: 50px;
+  border: 1px solid;
+  border-radius: 25px;
+  color: white;
+  background:  #750821;
+  font-size: 18px;
+  font-weight: 700;
+  cursor: pointer;
+  outline: none;
+
+
+}
+</style>
+<body>
+
+    <div class="nav">
+        <a class="active" href="#home">About</a>
+        <a href="#n">Pricing</a>
+        <a href="#container">Register</a>
+        <a href="#a">Contact</a>
+      </div>
+
+      <div class="c1">
+        <form class="f1">
+          <div class="container">
+            <h1>Register Here</h1>
+           
+            <label><b>Name<span style="color: #e71b1b;">*</span></b></label> <br>
+            <input type="text" placeholder="First Name" name="fname">
+            <input type="text" placeholder="last name" name="lname"> <br>
+            <label for="email"><b>Username </b></label> <br>
+            <input type="text" placeholder="Username" name="uname"> <br>
+            <label for="email"><b>Email </b></label> <br>
+            <input type="text" placeholder="Email" name="email"> <br>
+            <label for="pwd"><b>Password</b></label> <br>
+            <input type="password" placeholder="Enter Password" name="pwd"> <br>
+            <label for="confirm"><b>Confirm Password</b></label> <br>
+            <input type="password" placeholder="Confirm Password" name="confirm"> <br>
+            <label><b>Bio </b></label><br>
+            <textarea id="comments"  name="bio" placeholder="Enter something about you"></textarea><br>
+            <input type="submit" value="Register">
+            </div>
+            
+        
+           </form>
+
+      </div>
+
+    
+</body>
+</html>

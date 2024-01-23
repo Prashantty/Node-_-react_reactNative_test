@@ -1,0 +1,63 @@
+{
+    "posts":[
+      {
+        "id": 12345,
+        "name": "parul",
+        "projects":  "Project A",
+            "department": "Engineering",
+            "travel": {
+              "reason": "Client Meeting",
+              "booking": {
+                "type": "Air",
+                "details": {
+                  "flight_type": "Domestic",
+                  "aadharno": "1234 5678 9012",
+                  "date": "2023-05-15"
+                }
+              }
+            }
+          },
+
+          {
+            "id": 12346,
+            "name": "prashant",
+            "department": "Marketing",
+            "travel": {
+              "reason": "Conference",
+              "booking": {
+                "type": "Hotel",
+                "details": {
+                  "date": "2023-06-01",
+                  "days": 3,
+                  "meals": {
+                    "lunch": true,
+                    "dinner": true,
+                    "preference": "Non-Veg"
+                  }
+                }
+              }
+            }
+          },
+          {
+            "id": 12347,
+            "name": "Nilesh",
+            "department": "Finance",
+            "travel": {
+              "reason": "Project Visit",
+              "booking": {
+                "type": "Air+Hotel",
+                "details": {
+                  "date": "2023-07-01",
+                  "days": 5,
+                  "meals": {
+                    "lunch": true,
+                    "dinner": false,
+                    "preference": "Veg"
+                  }
+                }
+              }
+            }
+          }
+        ]
+      }
+
